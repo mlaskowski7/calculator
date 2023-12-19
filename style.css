@@ -22,7 +22,7 @@ body{
 }
 
 .calculator-screen{
-    background-color: #000;
+    background-color: #3b3b3b;
     color: white;
     margin: 0;
     display: flex;
@@ -62,3 +62,18 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #6190E8;
   }
+
+
+/* Buttons */
+
+.calculator-buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.equal-sign{
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
