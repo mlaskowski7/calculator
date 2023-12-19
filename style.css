@@ -60,7 +60,7 @@ body{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #6190E8;
+    background: #d67bca;
   }
 
 
@@ -73,7 +73,50 @@ body{
   padding: 10px;
 }
 
+.operator{
+  background-color: #d67bca;
+  color: white;
+  font-size: 30px;
+}
+
 .equal-sign{
   grid-column: -2;
   grid-row: 2 / span 4;
+  background-color: rgb(64, 202, 64);
 }
+
+.clear{
+  background-color: rgb(250, 69, 69);
+  color: white;
+}
+
+button{
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  border-radius: 8px;
+  background-color: #A7BFE8;
+  cursor: pointer;
+}
+
+button:hover{
+  filter: brightness(110%);
+}
+
+button:active{
+  transform: translateY(2px);
+}
+
+button:focus{
+  outline: none;
+}
+
+
+@media screen and (max-width: 600px){
+  .calculator{
+    width: 95%;
+  }
+}
+
+
